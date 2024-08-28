@@ -1,0 +1,7 @@
+---
+- name: Disponibilizar PR-setenova_webpage
+  hosts: remote
+  become: true
+  roles:
+    - dotfiles
+    - astro
