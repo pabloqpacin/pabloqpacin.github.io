@@ -52,3 +52,8 @@ npm run dev -- --host
 
 > Curso Udemy: [Desarrollo web ultra rápido con Astro](https://www.udemy.com/course/desarrollo-web-ultra-rapido-con-astro/?couponCode=SKILLS4SALEB)
 
+
+### Preps
+
+- [ ] https://docs.astro.build/en/guides/deploy/github/
+
