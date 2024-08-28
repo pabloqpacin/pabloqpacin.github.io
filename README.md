@@ -55,5 +55,5 @@ npm run dev -- --host
 
 ### Preps
 
-- [ ] https://docs.astro.build/en/guides/deploy/github/
+- [x] https://docs.astro.build/en/guides/deploy/github/
 
