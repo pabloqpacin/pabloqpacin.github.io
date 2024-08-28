@@ -1,0 +1,27 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+cluster = {
+  "astropqp" => { :ip => "10.0.0.100", :cpus => 2, :mem => 4096 }
+}
+groups = {
+  "remote" => ["astropqp"]
+}
+
+Vagrant.configure("2") do |config|
+    config.vm.box = "generic/debian12"
+    cluster.each do |name, data|
+      config.vm.define name do |host|
+        host.vm.hostname = name
+        host.vm.network "private_network", ip: "#{data[:ip]}"
+        host.vm.provider :virtualbox do |vb, override|
+          vb.cpus = data[:cpus]
+          vb.memory = data[:mem]
+        end
+      end
+    end
+    config.vm.provision "ansible" do |ansible|
+      ansible.compatibility_mode = "2.0"
+      ansible.playbook = "playbook.yaml"
+      ansible.groups = groups
+    end
+  end

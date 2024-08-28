@@ -1,0 +1,5 @@
+---
+- ansible.builtin.include_tasks: install.yaml
+- ansible.builtin.include_tasks: docker.yaml
+- ansible.builtin.include_tasks: setup.yaml
+- ansible.builtin.include_tasks: nvim.yaml
