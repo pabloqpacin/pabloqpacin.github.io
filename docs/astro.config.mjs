@@ -4,4 +4,8 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     site: 'https://pabloqpacin.github.io',
     // base: 'pabloqpacin',
+    // i18n: {
+    //     defaultLocale: "en",
+    //     locales: ["es", "en", "pt-br"],
+    // }
 });

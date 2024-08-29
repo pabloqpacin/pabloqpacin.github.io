@@ -47,8 +47,16 @@ python3 -m http.server
 npm run dev -- --host
 ``` -->
 
-<!-- - [ ] https://jekyllrb.com/docs/posts/
-- [ ] https://docs.astro.build/en/guides/deploy/github/ -->
+<!--
+- [ ] https://jekyllrb.com/docs/posts/
+- [ ] https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+- [ ] https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
+- [ ] https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+- [ ] https://docs.astro.build/en/guides/deploy/github/
+- [ ] https://astro.build/themes/
+- [ ] https://docs.astro.build/en/basics/project-structure/
+- [ ] https://astrofy-template.netlify.app/
+-->
 
 > Curso Udemy: [Desarrollo web ultra rápido con Astro](https://www.udemy.com/course/desarrollo-web-ultra-rapido-con-astro/?couponCode=SKILLS4SALEB)
 
@@ -56,4 +64,7 @@ npm run dev -- --host
 ### Preps
 
 - [x] https://docs.astro.build/en/guides/deploy/github/
+- [ ] https://docs.astro.build/en/guides/internationalization/
+
+
 
