@@ -137,6 +137,10 @@ OJO: se soluciona bug del punto 11 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 16. Fetch json (5 min)
 
+- https://jsonplaceholder.typicode.com/users
+- F5 en navegador > mirar terminal donde `npm run dev`
+- **OJO**: se arregla bug de TS ("Parameter 'item' implicitly has an 'any' type.") mediante `interface foo{};`
+
 ### 17. Layout en markdown (6 min)
 
 ### 18. Formato con Markdown (11 min)
