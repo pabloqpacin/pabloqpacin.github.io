@@ -153,6 +153,9 @@ OJO: se soluciona bug del punto 11 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 20. Ruta dinamica (7 min)
 
+- SSR: `astro.config.mjs`
+- ...
+
 ### 21. Alias (4 min)
 
 ### 22. Proyecto bases Astro (0 min)
