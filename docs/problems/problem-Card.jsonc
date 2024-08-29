@@ -1,0 +1,27 @@
+// Problems that make Actions CI/CD fail -- eg. https://github.com/pabloqpacin/pabloqpacin.github.io/actions/runs/10614303143/job/29419911180
+[
+	{
+		"resource": "/home/pabloqpacin/repos/pabloqpacin.github.io/docs/src/components/Card.astro",
+		"owner": "_generated_diagnostic_collection_name_#2",
+		"code": "2652",
+		"severity": 8,
+		"message": "Merged declaration 'Card' cannot include a default export declaration. Consider adding a separate 'export default Card' declaration instead.",
+		"source": "ts",
+		"startLineNumber": 2,
+		"startColumn": 7,
+		"endLineNumber": 2,
+		"endColumn": 11
+	},
+	{
+		"resource": "/home/pabloqpacin/repos/pabloqpacin.github.io/docs/src/components/Card.astro",
+		"owner": "_generated_diagnostic_collection_name_#2",
+		"code": "2322",
+		"severity": 8,
+		"message": "Type '{ children: any[]; class: string; }' is not assignable to type 'IntrinsicAttributes & Props'.\n  Property 'class' does not exist on type 'IntrinsicAttributes & Props'.",
+		"source": "ts",
+		"startLineNumber": 17,
+		"startColumn": 7,
+		"endLineNumber": 17,
+		"endColumn": 12
+	}
+]

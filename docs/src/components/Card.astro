@@ -1,5 +1,5 @@
 ---
-const Card = "div";
+// const Card = "div";
 const Container = "div";
 
 // const visible = true;
@@ -14,7 +14,7 @@ const { nombre, ocupacion = "Sin definir", avatar } = Astro.props;
 ---
 
 <!-- {visible && <h1>Hola</h1>} -->
-<Card class="card">
+<div class="card">
     <img
         src={avatar ? "images/avatar1.png" : "images/avatar2.png"}
         alt="imagen" style="width:100%"
@@ -26,7 +26,7 @@ const { nombre, ocupacion = "Sin definir", avatar } = Astro.props;
             <p>Contenido de la descripción</p>
         </slot>
     </Container>
-</Card>
+</div>
 
 
 <style>
