@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths(){
+    return [
+        {params: { id: '123'} },
+        {params: { id: '123456'} },
+        {params: { id: '123_hola'} },
+    ]
+}
+
+const { id } = Astro.params;
+---
+
+<Layout title="Blog">
+    <h2>El id del registro es: {id}</h2>
+</Layout>

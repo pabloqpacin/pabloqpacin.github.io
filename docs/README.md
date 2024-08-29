@@ -149,6 +149,8 @@ OJO: se soluciona bug del punto 11 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 19. Rutas y parámetros estáticos (7 min)
 
+- ...
+
 ### 20. Ruta dinamica (7 min)
 
 ### 21. Alias (4 min)
