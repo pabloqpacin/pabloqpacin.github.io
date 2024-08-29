@@ -1,5 +1,5 @@
 ---
-layout: '../layouts/LayoutMD.astro'
+layout: '@layouts/LayoutMD.astro'
 title: 'Terminos y condiciones'
 fecha: '29/08/2024'
 autor: 'pabloqpacin'
