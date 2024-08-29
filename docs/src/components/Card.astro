@@ -2,15 +2,23 @@
 const Card = "div";
 const Container = "div";
 
+// const visible = true;
+// const visible = false;
+
 export interface Props {
-    nombre: string
-    ocupacion?: string
+    nombre: string;
+    ocupacion?: string;
+    avatar:boolean;
 }
-const { nombre, ocupacion = "Sin definir"} = Astro.props;
+const { nombre, ocupacion = "Sin definir", avatar } = Astro.props;
 ---
 
+<!-- {visible && <h1>Hola</h1>} -->
 <Card class="card">
-    <img src="images/avatar1.png" alt="imagen1" style="width:100%" />
+    <img
+        src={avatar ? "images/avatar1.png" : "images/avatar2.png"}
+        alt="imagen" style="width:100%"
+    />
     <Container class="container">
         <h4>{nombre}</h4>
         <p>{ocupacion}</p>
