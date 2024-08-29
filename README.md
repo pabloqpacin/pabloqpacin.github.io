@@ -86,7 +86,11 @@ npm run dev -- --host
     at async cli (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/cli/index.js:168:5)
 Error: Process completed with exit code 1.
 ```
-
+<!-- 
+- [ ] https://github.com/withastro/adapters
+- [ ] https://astro.build/integrations/?search=&categories%5B%5D=adapters
+- [ ] https://vitejs.dev/guide/ssr.html
+ -->
 
 ### Next up
 
