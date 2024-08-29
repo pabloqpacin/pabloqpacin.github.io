@@ -156,9 +156,13 @@ OJO: se soluciona bug del punto 11 ([info](https://github.com/pabloqpacin/pabloq
 - SSR: `astro.config.mjs`
 - ...
 
+OJO: se introduce bug según [info](https://github.com/pabloqpacin/pabloqpacin.github.io/actions/runs/10619370568/job/29436796855)
+
 ### 21. Alias (4 min)
 
 ### 22. Proyecto bases Astro (0 min)
+
+OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloqpacin.github.io/commit/c2564f67d8264439edc1e586220a00b294589327))
 
 
 ## Sección 4: Blog dinámico con Markdown

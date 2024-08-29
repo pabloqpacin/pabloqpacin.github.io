@@ -8,5 +8,5 @@ export default defineConfig({
     //     defaultLocale: "en",
     //     locales: ["es", "en", "pt-br"],
     // }
-    output: 'server'
+    // output: 'server'
 });

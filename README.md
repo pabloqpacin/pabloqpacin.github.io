@@ -64,6 +64,32 @@ npm run dev -- --host
 ### Preps
 
 - [x] https://docs.astro.build/en/guides/deploy/github/
+- SSR
+  - [x] https://docs.astro.build/en/reference/errors/no-adapter-installed/
+  - [ ] https://docs.astro.build/en/guides/server-side-rendering/
+    - [ ] Any available **adapter** for **Github Pages**? Atm I can't figure it out
+    - [x] Atm **no SSR** on **Github Pages** (INOP)
+
+```log
+# astro/action: CI/CD: Install, build, and upload your site
+# https://github.com/pabloqpacin/pabloqpacin.github.io/actions/runs/10619370568/job/29436796855
+
+[NoAdapterInstalled] Cannot use `output: 'server'` or `output: 'hybrid'` without an adapter. Please install and configure the appropriate server adapter for your final deployment.
+  Hint:
+    See https://docs.astro.build/en/guides/server-side-rendering/ for more information.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/no-adapter-installed/
+  Stack trace:
+    at viteBuild (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/core/build/static-build.js:42:11)
+    at async AstroBuilder.run (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/core/build/index.js:180:7)
+    at async build (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/cli/build/index.js:24:3)
+    at async cli (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/cli/index.js:168:5)
+Error: Process completed with exit code 1.
+```
+
+
+### Next up
+
 - [ ] https://docs.astro.build/en/guides/internationalization/
 
 

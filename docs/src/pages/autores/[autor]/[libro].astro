@@ -1,6 +1,19 @@
 ---
 import Layout from "@layouts/Layout.astro";
 
+export function getStaticPaths(){
+    return [
+        {params: {
+                autor: 'Stephen King',
+                libro: 'IT'
+        }},
+        {params: {
+            autor: 'Sade',
+            libro: 'Justine'
+        }},
+    ]
+}
+
 const { autor, libro } = Astro.params;
 ---
 
