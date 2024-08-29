@@ -143,6 +143,8 @@ OJO: se soluciona bug del punto 11 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 17. Layout en markdown (6 min)
 
+- `frontmatter`
+
 ### 18. Formato con Markdown (11 min)
 
 ### 19. Rutas y parámetros estáticos (7 min)
