@@ -22,6 +22,9 @@ const { nombre, ocupacion = "Sin definir", avatar } = Astro.props;
     <Container class="container">
         <h4>{nombre}</h4>
         <p>{ocupacion}</p>
+        <slot name="desc">
+            <p>Contenido de la descripción</p>
+        </slot>
     </Container>
 </Card>
 

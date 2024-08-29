@@ -8,6 +8,8 @@ import Card from '../components/Card.astro';
 <Layout title="Bienvenido a Astro.">
 	<Titulo />
 	<Card nombre="Luis" avatar={true} />
-	<Card nombre="Sandra" ocupacion="Ing. Diseño" avatar={false} />
+	<Card nombre="Sandra" ocupacion="Ing. Diseño" avatar={false}>
+		<p slot="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro provident dolorem obcaecati qui, a iusto cum facere velit beatae ex officiis voluptates reprehenderit omnis voluptate optio dolor eveniet quisquam maiores?</p>
+	</Card>
 </Layout>
 
