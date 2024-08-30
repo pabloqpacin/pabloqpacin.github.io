@@ -190,6 +190,10 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 31. Registro en The Movie Data Base (3 min)
 
+- Uso de la API de [TMDB](https://www.themoviedb.org/)
+  - https://developer.themoviedb.org/docs/getting-started
+  - Login: Settings: API: Generar API key: Developer: Form: {API KEY, API Read Access Token}
+
 ### 32. Crear proyecto (5 min)
 
 ### 33. Navbar (4 min)
