@@ -175,6 +175,8 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 26. Post de markdown (7 min)
 
+- [ ] [frontmatter en `LayoutMD.astro`...](https://docs.astro.build/en/basics/astro-components/)
+
 ### 27. Blog preview (6 min)
 
 ### 28. Mostrar posts con Astro.glob() (6 min)
