@@ -3,9 +3,7 @@ import Layout from '@layouts/Layout.astro';
 import Title from '@components/Title.astro';
 import BlogPreview from '@components/BlogPreview.astro';
 
-// Si una carpeta esta vacía (no *.md) saltará algún error
-let allPost = await Astro.glob('./posts/**/*.md');
-// Ordenar los posts por fecha
+let allPost = await Astro.glob('./posts/html/*.md');
 allPost = allPost.sort((fecha1, fecha2) =>
     new Date(fecha2.frontmatter.date).valueOf() -
     new Date(fecha1.frontmatter.date).valueOf()
@@ -16,7 +14,7 @@ allPost = allPost.sort((fecha1, fecha2) =>
 
 <Layout title="Welcome to My Blog">
     <Title
-        title='My Programming'
+        title='HTML'
         title2='Blog'
         subtitle='Awesome blog with Astro'
     />
