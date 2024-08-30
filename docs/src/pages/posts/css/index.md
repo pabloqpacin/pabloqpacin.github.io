@@ -1,16 +1,16 @@
 ---
 layout: "@layouts/LayoutMD.astro"
-title: HTML Structure
-date: 29/08/2024
+title: CSS Structure
+date: 28/08/2024
 author: pabloqpacin
 desc: Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic officia aspernatur nobis recusandae numquam, nulla odio doloribus repellendus iusto, quod quisquam placeat labore? Ipsam sed sint sit eaque aspernatur?
 image: https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_1280.jpg
 ---
 
 
-# HTML Structure
+# CSS Structure
 
-![html](https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_1280.jpg)
+![css](https://cdn.pixabay.com/photo/2015/02/24/02/05/website-647013_1280.jpg)
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto hic officia aspernatur nobis recusandae numquam, nulla odio doloribus repellendus iusto, quod quisquam placeat labore? Ipsam sed sint sit eaque aspernatur?
 
