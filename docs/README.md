@@ -196,7 +196,12 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 32. Crear proyecto (5 min)
 
+- [bootstrap](https://getbootstrap.com/): "Include via CDN" in `Layout.astro`: `<link href="..." rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">`
+
 ### 33. Navbar (4 min)
+
+- https://developer.themoviedb.org/reference/movie-popular-list:
+  - Try it!: ...
 
 ### 34. Mostrar películas desde API (8 min)
 

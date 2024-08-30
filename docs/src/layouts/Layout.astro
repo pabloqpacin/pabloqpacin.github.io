@@ -1,5 +1,5 @@
 ---
-
+import Nav from "@components/Nav.astro";
 ---
 
 <!doctype html>
@@ -14,6 +14,9 @@
 		<title>Movies Astro</title>
 	</head>
 	<body>
-		<slot />
+		<Nav />
+		<div class="container">
+			<slot />
+		</div>
 	</body>
 </html>
