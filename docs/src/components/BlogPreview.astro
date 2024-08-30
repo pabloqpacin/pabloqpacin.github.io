@@ -15,7 +15,7 @@ const { post } = Astro.props;
                 <p>{ post.frontmatter.desc }</p>
                 <p>{ post.frontmatter.author }</p>
                 <p>{ post.frontmatter.date }</p>
-                <a href="{post.url}" class="btn">Read post</a>
+                <a href={post.url} class="btn">Read post</a>
             </div>
         </div>
         <div class="rightSide">
