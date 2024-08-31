@@ -1,14 +1,23 @@
 import { useState } from "react";
 
-function Search(){
-    const [text, setText] = useState("Hola React");
 
-    return (
+export default function Search(){
+    const [value, setValue] = useState('');
+    const buscar = (e) => setValue(e.target.value);
+    const url = "/results/"
+
+    return(
         <div>
-            <h1>{ text }</h1>
-            <button onClick={() => setText("Bienvenido React")}>Click</button>
+            <center>
+                <h1 class="mt-5">Search Movie</h1>
+                <form action={ url+value } method="POST">
+                    <input 
+                        type="search" className="form-control p-3"
+                        value={value} onChange={buscar}
+                        placeholder="Search"
+                    />
+                </form>
+            </center>
         </div>
     )
 }
-
-export default Search;
