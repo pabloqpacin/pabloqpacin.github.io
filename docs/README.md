@@ -209,7 +209,11 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 36. Mostrar trailer de película (7 min)
 
+- https://developer.themoviedb.org/reference/movie-videos
+
 ### 37. Integración con React (10 min)
+
+- `~~npx~~ pnpm astro add react`
 
 ### 38. Buscador con React (7 min)
 
@@ -217,6 +221,7 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 40. Proyecto API TMDB (0 min)
 
+- [ ] 'home' button in navbar
 
 ## Sección 6: Acortador de URLs con Astro, Svelte y Tailwindcss
 
