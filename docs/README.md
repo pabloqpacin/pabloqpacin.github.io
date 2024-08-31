@@ -219,6 +219,8 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 39. Terminando Buscador (4 min)
 
+- https://developer.themoviedb.org/reference/search-movie
+
 ### 40. Proyecto API TMDB (0 min)
 
 - [ ] 'home' button in navbar
