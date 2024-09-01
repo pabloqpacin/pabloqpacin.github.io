@@ -190,9 +190,18 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 31. Registro en The Movie Data Base (3 min)
 
+- Uso de la API de [TMDB](https://www.themoviedb.org/)
+  - https://developer.themoviedb.org/docs/getting-started
+  - Login: Settings: API: Generar API key: Developer: Form: {API KEY, API Read Access Token}
+
 ### 32. Crear proyecto (5 min)
 
+- [bootstrap](https://getbootstrap.com/): "Include via CDN" in `Layout.astro`: `<link href="..." rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">`
+
 ### 33. Navbar (4 min)
+
+- https://developer.themoviedb.org/reference/movie-popular-list:
+  - Try it!: ...
 
 ### 34. Mostrar películas desde API (8 min)
 
@@ -200,14 +209,21 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 36. Mostrar trailer de película (7 min)
 
+- https://developer.themoviedb.org/reference/movie-videos
+
 ### 37. Integración con React (10 min)
+
+- `~~npx~~ pnpm astro add react`
 
 ### 38. Buscador con React (7 min)
 
 ### 39. Terminando Buscador (4 min)
 
+- https://developer.themoviedb.org/reference/search-movie
+
 ### 40. Proyecto API TMDB (0 min)
 
+- [ ] 'home' button in navbar
 
 ## Sección 6: Acortador de URLs con Astro, Svelte y Tailwindcss
 

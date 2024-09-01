@@ -1,25 +1,11 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Title from '@components/Title.astro';
-import BlogPreview from '@components/BlogPreview.astro';
-
-// Si una carpeta esta vacía (no *.md) saltará algún error
-let allPost = await Astro.glob('./posts/**/*.md');
-// Ordenar los posts por fecha
-allPost = allPost.sort((fecha1, fecha2) =>
-    new Date(fecha2.frontmatter.date).valueOf() -
-    new Date(fecha1.frontmatter.date).valueOf()
-);
-
-
+import Movies from '@components/Movies.astro';
+import Search from '@components/Search.jsx';
 ---
 
-<Layout title="Welcome to My Blog">
-    <Title
-        title='My Programming'
-        title2='Blog'
-        subtitle='Awesome blog with Astro'
-    />
-
-    {allPost.map((p) => <BlogPreview post={p}/> )}
+<Layout >
+	<Search client:load />
+	<Movies />
 </Layout>
+
