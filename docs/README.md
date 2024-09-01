@@ -229,6 +229,9 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 41. Integración de Svelte y Tailwind (7 min)
 
+- `pnpm create astro@latest` > New project: Empty
+- `cd docs && yes | pnpm astro add svelte && yes | pnpm astro add svelte`
+
 ### 42. Creando nav con tailwind (7 min)
 
 ### 43. Input con tailwind (5 min)
