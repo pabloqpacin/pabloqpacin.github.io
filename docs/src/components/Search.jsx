@@ -9,7 +9,7 @@ export default function Search(){
     return(
         <div>
             <center>
-                <h1 class="mt-5">Search Movie</h1>
+                <h1 className="mt-5">Search Movie</h1>
                 <form action={ url+value } method="POST">
                     <input 
                         type="search" className="form-control p-3"
