@@ -243,6 +243,13 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 45. Recortar url (10 min)
 
+- https://short.io:
+  1. Dominio `pabloqpacin.com`: create `link CNAME cname.short.io` en DonDominio
+  2. Integrations & API > Secret keys: `AstroSvelte: link.pabloqpacin.com` > escribir en `.env` ([src1](https://docs.astro.build/en/guides/environment-variables/), [src2](https://vitejs.dev/guide/env-and-mode.html#env-files)) para `@components/Short.svelte`
+- https://developers.short.io/reference > [Create short link](https://developers.short.io/reference/linkspost)
+- Test con [raw.github.../dotfiles/**/autosetup/foo.sh](https://raw.githubusercontent.com/pabloqpacin/dotfiles/main/scripts/autosetup/DebUbu-base.sh)  > **ÉXITO!**
+
+
 ### 46. Botón para copiar url (9 min)
 
 ### 47. Proyecto svelte + Tailwind (0 min)
