@@ -223,7 +223,8 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 40. Proyecto API TMDB (0 min)
 
-- [ ] 'home' button in navbar
+- [x] 'home' button in navbar
+- [x] **DOCKERIZACIÓN**
 
 ## Sección 6: Acortador de URLs con Astro, Svelte y Tailwindcss
 
@@ -233,6 +234,8 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 - `cd docs && yes | pnpm astro add svelte && yes | pnpm astro add svelte`
 
 ### 42. Creando nav con tailwind (7 min)
+
+- https://tailwindcss.com/
 
 ### 43. Input con tailwind (5 min)
 
