@@ -374,10 +374,19 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 69. Proyecto Content Collections (0 min)
 
+- [ ] MUY MEJORABLE!!
 
 ## Sección 10: Astro e Inteligencia Artificial con OpenAI, Dall-e y ChatGPT
 
 ### 70. OpenAI (6 min)
+
+- [openai.com/api/pricing](https://openai.com/api/pricing/):
+  - **[Assistants API](https://platform.openai.com/docs/assistants/overview)** (beta): Code Interpreter == $0.03 / session
+  - **[DALL-E](https://platform.openai.com/docs/guides/images?context=node)**: DALL-E 2 == $0.016 / image
+  - **Audio**:
+    - [Whisper STT](https://platform.openai.com/docs/guides/speech-to-text): $0.006 / minute
+    - **[TTS](https://platform.openai.com/docs/guides/text-to-speech)**: $15 / 1M characters
+
 
 ### 71. Estructura de proyecto (6 min)
 
