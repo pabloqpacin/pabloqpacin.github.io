@@ -1,16 +1,9 @@
 import { defineConfig } from 'astro/config';
 
-import react from '@astrojs/react';
-
-import node from '@astrojs/node';
+import svelte from '@astrojs/svelte';
+import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://pabloqpacin.github.io',
-  output: "server",
-  integrations: [react()],
-
-  adapter: node({
-    mode: 'standalone',
-  }),
+  integrations: [svelte(), tailwind()]
 });

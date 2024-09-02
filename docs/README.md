@@ -223,13 +223,19 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 40. Proyecto API TMDB (0 min)
 
-- [ ] 'home' button in navbar
+- [x] 'home' button in navbar
+- [x] **DOCKERIZACIÓN**
 
 ## Sección 6: Acortador de URLs con Astro, Svelte y Tailwindcss
 
 ### 41. Integración de Svelte y Tailwind (7 min)
 
+- `pnpm create astro@latest` > New project: Empty
+- `cd docs && yes | pnpm astro add svelte && yes | pnpm astro add svelte`
+
 ### 42. Creando nav con tailwind (7 min)
+
+- https://tailwindcss.com/
 
 ### 43. Input con tailwind (5 min)
 
@@ -237,10 +243,70 @@ OJO: se soluciona bug del punto 20 ([info](https://github.com/pabloqpacin/pabloq
 
 ### 45. Recortar url (10 min)
 
+- https://short.io:
+  1. Dominio `pabloqpacin.com`: create `link CNAME cname.short.io` en DonDominio
+  2. Integrations & API > Secret keys: `AstroSvelte: link.pabloqpacin.com` > escribir en `.env` ([src1](https://docs.astro.build/en/guides/environment-variables/), [src2](https://vitejs.dev/guide/env-and-mode.html#env-files)) para `@components/Short.svelte`
+- https://developers.short.io/reference > [Create short link](https://developers.short.io/reference/linkspost)
+- Test con [raw.github.../dotfiles/**/autosetup/foo.sh](https://raw.githubusercontent.com/pabloqpacin/dotfiles/main/scripts/autosetup/DebUbu-base.sh)  > **ÉXITO!**
+
+
 ### 46. Botón para copiar url (9 min)
 
 ### 47. Proyecto svelte + Tailwind (0 min)
 
+- Issues on `pabloqpacin.github.io`:
+  - pabloqpacin.github.io/:1 Access to fetch at 'https://api.short.io/links' from origin 'https://pabloqpacin.github.io' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+  - api.short.io/links:1 Failed to load resource: net::ERR_FAILED
+  - Short.C-AMvoDe.js:1 Uncaught (in promise) TypeError: Failed to fetch at HTMLButtonElement.c (Short.C-AMvoDe.js:1:9121)
+
+```md
+The error you're encountering is related to Cross-Origin Resource Sharing (CORS). When your web application, hosted on `https://pabloqpacin.github.io`, tries to make a request to the Short.io API (`https://api.short.io/links`), the browser blocks it because the response from the API does not include the `Access-Control-Allow-Origin` header, which is necessary to allow cross-origin requests.
+
+### Solutions
+
+Here are a few approaches to address this issue:
+
+#### 1. **Use a Backend Proxy**
+   - **Description**: Create a simple server (using Node.js, for example) that acts as a proxy between your frontend application and the Short.io API. Your frontend will make requests to your server, and your server will forward those requests to the Short.io API.
+   - **How**: Deploy a server, and modify your front-end code to send requests to this server.
+
+#### 2. **Check Short.io API Settings**
+   - **Description**: Some APIs allow you to configure CORS settings for specific domains via their dashboard. Check if Short.io provides an option to whitelist your domain (`https://pabloqpacin.github.io`) to allow CORS requests.
+   - **How**: Log in to the Short.io dashboard and look for any CORS settings.
+
+#### 3. **Use a CORS Proxy**
+   - **Description**: There are public CORS proxies available, but using them is not recommended for production environments due to security concerns.
+   - **Example**:
+     ```javascript
+     const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.short.io/links', options);
+     ```
+   - **Note**: This is a temporary and insecure solution, so avoid using it in production.
+
+#### 4. **Set `mode: 'no-cors'` (Not Recommended)**
+   - **Description**: You could set the `mode` of the fetch request to `'no-cors'`, but this will severely limit the response you can handle. You won't be able to access the response body or any headers.
+   - **Example**:
+     ```javascript
+     const options = {
+         method: 'POST',
+         headers: {
+             'Authorization': SHORTIO_API_KEY,
+             'Content-Type': 'application/json',
+         },
+         mode: 'no-cors',
+         body: JSON.stringify({ originalUrl: url, domain: SHORTIO_DOMAIN }),
+     };
+     const response = await fetch('https://api.short.io/links', options);
+     ```
+   - **Why Not**: This approach essentially makes your request "invisible" to the browser's CORS mechanism, but also prevents you from processing the response meaningfully.
+
+### Recommended Solution
+Using a **backend proxy** is the most secure and flexible solution for production environments. This way, you can avoid CORS issues and keep your API key secure on the server side.
+
+If you need any help with setting up a proxy or have any more questions, feel free to ask!
+```
+
+- FIXES
+  - [ ] https://www.stackhawk.com/blog/fixing-no-access-control-allow-origin-header-present/
 
 ## Sección 7: ScrollPage con Astro y Vue
 
