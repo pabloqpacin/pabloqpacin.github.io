@@ -360,6 +360,8 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 64. Astro 2.0 (5 min)
 
+- https://docs.astro.build/en/guides/content-collections/
+
 ### 65. Content Collection (7 min)
 
 ### 66. Schema (8 min)
