@@ -330,7 +330,9 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 55. Card works (6 min)
 
-- Stock photos: [freepik.com](https://freepik.com/)
+- Stock photos:
+  - [freepik.com](https://freepik.com/)
+  - [pixabay.com](https://pixabay.com/)
 
 
 ### 56. Menu (5 min)
@@ -359,6 +361,8 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 ## Sección 9: Content Collections
 
 ### 64. Astro 2.0 (5 min)
+
+- https://docs.astro.build/en/guides/content-collections/
 
 ### 65. Content Collection (7 min)
 
