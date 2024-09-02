@@ -6,7 +6,8 @@ git push -u origin devel
 PR (squash)
 
 git fetch --all
-git merge origin/main && git push
+git merge origin/main --no-edit
+git push
 git branch -m devel legacy/foo
 git push origin --delete devel
 git push --set-upstream origin legacy/foo
