@@ -4,10 +4,7 @@ description:  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores 
 date: 2024-09-02
 active: true
 author: pabloqpacin
-image: {
-    src: https://cdn.pixabay.com/photo/2016/11/04/13/31/css-1797778_1280.jpg,
-    alt: image_post_2
-}
+image: https://cdn.pixabay.com/photo/2016/11/04/13/31/css-1797778_1280.jpg
 category: css
 
 ---

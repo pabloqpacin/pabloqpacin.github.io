@@ -8,6 +8,10 @@ const blog = defineCollection({
         date: z.date(),
         active: z.boolean(),
         author: z.string(),
+        // image: z.object({
+        //     src: z.string(),
+        //     alt: z.string(),
+        // }).optional(),
         image: z.string().optional(),
         category: z.string(),
         // TODO: tags: z.array(z.string()),
