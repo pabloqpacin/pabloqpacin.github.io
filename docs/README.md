@@ -330,6 +330,9 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 55. Card works (6 min)
 
+- Stock photos: [freepik.com](https://freepik.com/)
+
+
 ### 56. Menu (5 min)
 
 ### 57. Title Page (4 min)
@@ -344,8 +347,14 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 62. Deploy en netlify (8 min)
 
+- Mmmmmmmm [0$ Starter tier on **Netlify**](https://www.netlify.com/pricing/): Sign up via GitHub
+- Netlify: Import from GitHub: repo > ...
+
 ### 63. Proyecto portafolio (0 min)
 
+- [ ] improve for Mobile
+- [ ] actually add more info on Work 1, Work 2, etc
+- [ ] markdown blog!!
 
 ## Sección 9: Content Collections
 

@@ -9,7 +9,6 @@
       "@components/*": [
         "src/components/*"
       ]
-    },
-    "jsx": "preserve"
+    }
   }
 }
