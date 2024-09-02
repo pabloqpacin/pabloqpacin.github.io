@@ -1,9 +1,8 @@
 ---
-// import Button from "@components/Button.astro";
-// import CardServices from "@components/CardServices.astro";
-// import CardWorks from "@components/CardWorks.astro";
 import Menu from "@components/Menu.astro";
-// import TitlePage from "@components/TitlePage.astro";
+
+const Card = "div";
+const Content = "div";
 ---
 
 <html lang="en">
@@ -15,10 +14,27 @@ import Menu from "@components/Menu.astro";
 		<title>Portafolio</title>
 	</head>
 	<body>
-		<!-- <Button title="boton" />
-		<CardServices title="titulo" desc="desc" />
-		<CardWorks title="titulo" image="images/code1.jpg" desc="code img" />
-		<TitlePage title="titulo" subtitle="subtitle" /> -->
 		<Menu />
+
+		<div class="absolute w-full min-h-screen">
+			<div class="absolute z-0 top-0 w-full h-1/2 bg-cover bg-bottom pt-20 px-12 bg-gradient-to-r from-purple-500 to-pink-500">
+
+			</div>
+		</div>
+
+		<Card class="relative z-10 flex min-h-screen h-auto justify-center items-center">
+			<Content class="relative z-20 bg-white md:flex p-12 shadow-lg rounded-lg w-full max-w-4xl">
+				<div class="sm:flex flex-col py-1 md:pr-10">
+					<h2 class="text-lg mb-3">Hello, I am</h2>
+					<h1 class="text-5xl font-bold text-gray-800 mb-6">pabloqpacin</h1>
+					<p class="text-xl">
+						Full-stack web and mobile developer (sheesh) who crafts great websites and awesome mobile apps.
+					</p>
+				</div>
+				<img src="images/PROFILE.jpeg" alt="image" class="flex-shrink-0 w-80 rounded-full border-6 border-white shadow-md">
+			</Content>
+		</Card>
+
+
 	</body>
 </html>
