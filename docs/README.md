@@ -330,7 +330,9 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 55. Card works (6 min)
 
-- Stock photos: [freepik.com](https://freepik.com/)
+- Stock photos:
+  - [freepik.com](https://freepik.com/)
+  - [pixabay.com](https://pixabay.com/)
 
 
 ### 56. Menu (5 min)
