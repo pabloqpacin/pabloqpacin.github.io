@@ -352,6 +352,9 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 63. Proyecto portafolio (0 min)
 
+- [ ] improve for Mobile
+- [ ] actually add more info on Work 1, Work 2, etc
+- [ ] markdown blog!!
 
 ## Sección 9: Content Collections
 
