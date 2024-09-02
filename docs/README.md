@@ -318,6 +318,7 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 51. Proyecto ScrollPage con vue (1 min)
 
+- [ ] probar contenido en cada sección y no placeholders
 
 ## Sección 8: Proyecto final - Portafolio
 
