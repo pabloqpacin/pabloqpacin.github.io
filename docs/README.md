@@ -347,6 +347,9 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 62. Deploy en netlify (8 min)
 
+- Mmmmmmmm [0$ Starter tier on **Netlify**](https://www.netlify.com/pricing/): Sign up via GitHub
+- Netlify: Import from GitHub: repo > ...
+
 ### 63. Proyecto portafolio (0 min)
 
 
