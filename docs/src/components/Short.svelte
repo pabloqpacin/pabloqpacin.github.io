@@ -1,14 +1,24 @@
 <script>
-    
+
     const inputStyle = "bg-gray-200 appearance-none border-2 border-gray rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500";
     const buttonStyle = "bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-10 pr-4";
-    
+
+    import Clipboard from "./Clipboard.svelte";
+
     let SHORTIO_DOMAIN = import.meta.env.PUBLIC_SHORTIO_DOMAIN;
     let SHORTIO_API_KEY = import.meta.env.PUBLIC_SHORTIO_API_KEY;
 
     let url = "";
     let resultUrl = "";
     let show = false;
+
+    const copy = () => {
+        const app = new Clipboard({
+            target: document.getElementById("clipboard"),
+            props: { resultUrl },
+        })
+        app.$destroy();
+    }
 
     const fetchUrl = async () => {
         // OJO: headers según cada API
@@ -29,6 +39,7 @@
         const data = await response.json();
         console.log(data);
         resultUrl = data.shortURL;
+        show = true;
     }
 
 </script>
@@ -53,5 +64,15 @@
     <button type="button" class={buttonStyle} on:click={fetchUrl}>Shorten</button>
 </div>
 
-<h1>{ resultUrl }</h1>
+
+{#if show}
+    <div class="md:flex md:item-center mt-10 justify-center">
+        <input bind:value={resultUrl} class="text-2xl text-pink-500 rounded-lg py-3 px-4 w-full max-w-lg">
+    </div>
+    <div class="md:flex md:item-center justify-center">
+        <button class={buttonStyle} on:click={copy}>Copy</button>
+        <div id="clipboard"></div>
+    </div>
+{/if}
+
 
