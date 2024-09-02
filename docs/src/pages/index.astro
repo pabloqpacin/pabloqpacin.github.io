@@ -7,7 +7,7 @@ import { getEntryBySlug } from 'astro:content';
 
 // const blogPost = await getCollection("blog");
 const blogPost = await getCollection("blog", ({ data }) => {
-	return data.category != "css";
+	return data.category != "html";
 	// consultas tipo fechas, autores, categoría, etc.
 });
 
@@ -53,10 +53,10 @@ const post1 = await getEntryBySlug("blog","post1");
 			{
 				blogPost.map((post) => (
 					<Card
-						title={post.data.title}
-						body={post.data.description}
-						image={post.data.image}
-						href=""
+						title={ post.data.title }
+						body={ post.data.description }
+						image={ post.data.image }
+						href={ `/blog/${post.slug}` }
 					/>
 				))
 			}
