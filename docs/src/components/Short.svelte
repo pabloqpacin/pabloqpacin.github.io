@@ -27,8 +27,7 @@
             headers: {
                 accept: 'application/json',
                 'content-type': 'application/json',
-                Authorization: SHORTIO_API_KEY,
-                'Access-Control-Allow-Origin': 'pabloqpacin.github.io'
+                Authorization: SHORTIO_API_KEY
             },
             body: JSON.stringify({
                 originalURL: url,
