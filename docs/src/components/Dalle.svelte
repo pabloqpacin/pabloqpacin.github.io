@@ -6,7 +6,6 @@
   let url = "";
   let load = false;
 
-  // const API_KEY = "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";
   const API_KEY = import.meta.env.PUBLIC_OPENAI_API_KEY;   // ojo..............
   const OPENAI_URL = "https://api.openai.com/v1/images/generations";
 
