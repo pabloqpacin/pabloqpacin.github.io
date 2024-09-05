@@ -394,6 +394,14 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 73. Imagen con Dall-E (10 min)
 
+```bash
+# pnpm install openai
+# pnpm install dotenv
+```
+
+- https://platform.openai.com/docs/guides/images?context=node
+- https://platform.openai.com/docs/api-reference/images
+
 ### 74. Creando ChatBot (16 min)
 
 ### 75. Proyecto GPT (0 min)

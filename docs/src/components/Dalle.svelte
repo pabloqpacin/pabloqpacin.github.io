@@ -4,10 +4,43 @@
 
   let prompt = "";
   let url = "";
-  // let imageURL = "";
+  let load = false;
+
+  // const API_KEY = "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";
+  const API_KEY = import.meta.env.PUBLIC_OPENAI_API_KEY;   // ojo..............
+  const OPENAI_URL = "https://api.openai.com/v1/images/generations";
 
   const apiSubmit = async () => {
-    alert("asdf")
+
+    load = true;
+    url = "";
+
+    const body = {
+      // OJO aquí
+      prompt, prompt,
+      model: "dall-e-3",
+      size: "1024x1024",
+      n: 1
+    };
+
+    const response = await fetch(OPENAI_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${API_KEY}`,
+      },
+      body: JSON.stringify(body),
+    })
+
+    const choices = await response.json()
+    // console.log(choices)
+
+    url = choices.data[0].url
+    if (url != ""){
+      load = false
+      prompt = ""
+    }
+
   };
 </script>
 
@@ -32,8 +65,10 @@
           on:click={ apiSubmit }>Enviar</button
         >
       </div>
-      <img src={ url } alt="imagen con IA" class="mt-4">
-      <Loader />
+      <img src={ url } alt="" class="mt-4">
+      {#if load}
+        <Loader />
+      {/if}
     </div>
   </div>
 </div>
