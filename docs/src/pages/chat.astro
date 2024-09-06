@@ -1,8 +1,11 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Chatbot from "@components/Chatbot.svelte";
 ---
 
-<Layout title="chatbot">
-    <h1>chat</h1>
+<Layout title="ChatBot (pqp)">
+    <div class="mt-4">
+        <Chatbot client:load />
+    </div>
 </Layout>
 

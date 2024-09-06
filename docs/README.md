@@ -406,5 +406,26 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 74. Creando ChatBot (16 min)
 
+- https://platform.openai.com/docs/api-reference/chat
+
+```bash
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+    "model": "gpt-4o-mini-2024-07-18",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Hello world in php please"
+      }
+    ]
+  }'
+```
+
 ### 75. Proyecto GPT (0 min)
 
