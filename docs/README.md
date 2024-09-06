@@ -374,10 +374,19 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 69. Proyecto Content Collections (0 min)
 
+- [ ] MUY MEJORABLE!!
 
 ## Sección 10: Astro e Inteligencia Artificial con OpenAI, Dall-e y ChatGPT
 
 ### 70. OpenAI (6 min)
+
+- [openai.com/api/pricing](https://openai.com/api/pricing/):
+  - **[Assistants API](https://platform.openai.com/docs/assistants/overview)** (beta): Code Interpreter == $0.03 / session
+  - **[DALL-E](https://platform.openai.com/docs/guides/images?context=node)**: DALL-E 2 == $0.016 / image
+  - **Audio**:
+    - [Whisper STT](https://platform.openai.com/docs/guides/speech-to-text): $0.006 / minute
+    - **[TTS](https://platform.openai.com/docs/guides/text-to-speech)**: $15 / 1M characters
+
 
 ### 71. Estructura de proyecto (6 min)
 
@@ -385,7 +394,38 @@ If you need any help with setting up a proxy or have any more questions, feel fr
 
 ### 73. Imagen con Dall-E (10 min)
 
+```bash
+# pnpm install openai
+# pnpm install dotenv
+```
+
+- https://platform.openai.com/docs/guides/images?context=node
+- https://platform.openai.com/docs/api-reference/images
+
+> OJO: como la webapp está hosteada en [github.io](https://pabloqpacin.github.io/) he subido el `.env` y me han baneado la API key. En el futuro: no commitear el .env, simplemente tenerlo en el servidor. Igualmente ojo con darle la propiedad `PUBLIC_` a la variable.
+
 ### 74. Creando ChatBot (16 min)
+
+- https://platform.openai.com/docs/api-reference/chat
+
+```bash
+curl https://api.openai.com/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -d '{
+    "model": "gpt-4o-mini-2024-07-18",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a helpful assistant."
+      },
+      {
+        "role": "user",
+        "content": "Hello world in php please"
+      }
+    ]
+  }'
+```
 
 ### 75. Proyecto GPT (0 min)
 
