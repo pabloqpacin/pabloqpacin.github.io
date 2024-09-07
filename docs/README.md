@@ -4,5 +4,10 @@
 
 ```bash
 pnpm create astro@latest
-    # Use blog template
+    # Use empty template
 ```
+
+
+- [ ] tailwind
+- [ ] localization
+- [ ] markdown blog for bi-weekly posts
