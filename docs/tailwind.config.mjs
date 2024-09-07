@@ -6,3 +6,15 @@ export default {
 	},
 	plugins: [],
 }
+
+// module.exports = {
+// 	theme: {
+// 	  extend: {
+// 		colors: {
+// 		  'custom-gray': '#333333',
+// 		},
+// 	  },
+// 	},
+// 	variants: {},
+// 	plugins: [],
+// }
