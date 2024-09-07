@@ -8,7 +8,7 @@ import { getCollection } from 'astro:content';
 // import { getEntryBySlug } from 'astro:content';
 
 const blogPost = await getCollection("blog", ({ data }) => {
-	return data.language == "en";
+	return data.language == "es";
 });
 ---
 

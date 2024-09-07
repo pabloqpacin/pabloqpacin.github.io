@@ -4,6 +4,7 @@ description: Linux, Vagrant, Ansible, Terraform...
 date: 2024-09-07
 image: https://cdn.pixabay.com/photo/2016/11/04/13/31/css-1797778_1280.jpg
 tags: [Devops, IaC, Linux, Vagrant, Ansible, Terraform]
+language: en
 ---
 
 
