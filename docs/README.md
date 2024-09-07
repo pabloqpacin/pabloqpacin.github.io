@@ -8,6 +8,6 @@ pnpm create astro@latest
 ```
 
 
-- [ ] tailwind
-- [ ] localization
+- [x] tailwind
+- [ ] [localization](https://docs.astro.build/en/guides/internationalization/)
 - [ ] markdown blog for bi-weekly posts
