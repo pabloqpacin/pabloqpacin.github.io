@@ -77,7 +77,23 @@ const { title } = Astro.props;
 		color: yellowgreen;
 	}
 	.nav {
+		display: flex;
 		text-align: end;
+		justify-content: end;
+		align-items: center;
+		margin-left: 15px;
+		/* padding: 10px 15px;		 */
+	}
+	.nav a,
+	.nav button {
+		margin-left: 15px;
+	}
+  .icon-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 50%;
+		margin-left: 10px;
 	}
 	.footer {
 		position: fixed;

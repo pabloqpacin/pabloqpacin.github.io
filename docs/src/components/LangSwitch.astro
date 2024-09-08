@@ -6,13 +6,15 @@
 -->
 
 
-<input type="button" value="LANG" id="langButton">
+<button class="icon-button" id="langButton">
+  <img src="internet.png">
+</button>
 
-<script type="text/javascript">
-  function pulsar_boton() {
-    alert('Prueba otra vez');
-  }
+<!-- Include JavaScript if needed -->
+<script type="module">
   document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('langButton').addEventListener('click', pulsar_boton);
+    document.getElementById('langButton').addEventListener('click', () => {
+      alert('Prueba otra vez');
+    });
   });
 </script>
