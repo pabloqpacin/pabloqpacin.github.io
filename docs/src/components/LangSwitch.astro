@@ -1,0 +1,18 @@
+<!-- 
+- button
+- click to display EN or ES
+- if clicked EN: /{currentURL} 
+- if clicked ES: /es/{currentURL} 
+-->
+
+
+<input type="button" value="LANG" id="langButton">
+
+<script type="text/javascript">
+  function pulsar_boton() {
+    alert('Prueba otra vez');
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('langButton').addEventListener('click', pulsar_boton);
+  });
+</script>
