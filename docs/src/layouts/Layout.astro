@@ -21,65 +21,27 @@ const lang = getLangFromUrl(Astro.url);
 		<title>{title}</title>
 	</head>
 	<body>
-		<main>
+		<div class="main">
 			<script src="../scripts/oneko.js"></script>
 			<slot />
-		</main>
+		</div>
 	</body>
 </html>
 <style is:global>
-	/*
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-	*/
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 	}
-	main {
+	.main {
 		margin: auto;
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 18px;
-		line-height: 1.6;
-	}
-	.main footer {
-    height: 100%;
-    display: flex;
-    flex: 1;
-    align-items: flex-end;
-    justify-content: center;
-    color: var(--text-dark-subtext-color);
-	}
-	.main div, footer {
-    flex: 1;
-    width: 100%;
-    max-width: 75ch;
+		line-height: 1.4;
 	}
 	a {
-		color: bisque;
 		color: yellowgreen;
 	}
 	.nav {
@@ -105,5 +67,11 @@ const lang = getLangFromUrl(Astro.url);
 		position: fixed;
 		bottom: 0;
 		text-align: center;
+		flex: 1;
+    width: 100%;
+    max-width: 75ch;
+	}
+	code {
+		font-size: 16px;
 	}
 </style>

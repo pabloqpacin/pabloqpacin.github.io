@@ -1,6 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Navbar from '@components/Navbar.astro';
+import NavbarES from '@components/NavbarES.astro';
 // import Footer from '@components/Footer.astro';
 
 import Card from '@components/Card.astro';
@@ -13,7 +13,7 @@ const blogPost = await getCollection("blog", ({ data }) => {
 ---
 
 <Layout title="blog">
-	<Navbar />
+	<NavbarES />
 	<h1>blog</h1>
 	<ul role="list" class="link-card-grid">
 		{
