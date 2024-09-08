@@ -1,20 +1,91 @@
+---
+import { languages } from '@i18n/ui';
+---
+
+<!-- Button with icon -->
+<div class="dropdown">
+  <button class="icon-button" id="langButton">
+    <img src="/internet.png" alt="Language Selector" width="30" height="30">
+  </button>
+
+  <!-- Language Dropdown Menu -->
+  <ul id="langMenu">
+    {Object.entries(languages).map(([lang, label]) => (
+      <li>
+        <a href={`/${lang}/`}>{label}</a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<!-- JavaScript for toggling the dropdown -->
+<script type="module">
+document.addEventListener('DOMContentLoaded', () => {
+  const langButton = document.getElementById('langButton');
+  const dropdown = document.querySelector('.dropdown');
+
+  // Toggle the dropdown on button click
+  langButton.addEventListener('click', () => {
+    dropdown.classList.toggle('show');
+  });
+
+  // Close the dropdown when clicking outside of it
+  window.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('show');
+    }
+  });
+});
+</script>
+
+
+<style>
+  /* Basic styles for the button */
+  .icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Dropdown menu styling */
+  .dropdown {
+    position: relative; /* Position relative to the button */
+    display: inline-block;
+  }
+
+  .dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Make the dropdown appear below the button */
+    top: 40px;          /* Adjust to control the dropdown position */
+    left: 0;
+    /* background-color: white; */
+    background-color: black;
+    border: 1px solid #ccc;
+    display: none;      /* Hidden by default */
+    z-index: 1000;
+  }
+
+  .dropdown ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .dropdown ul li:hover {
+    /* background-color: #eee; */
+    background-color: #13151a;
+  }
+
+  .dropdown.show ul {
+    display: block;     /* Show dropdown when 'show' class is added */
+  }
+</style>
+
+
 <!-- 
-- button
+- button (example: https://inlang.com/c/astro)
 - click to display EN or ES
 - if clicked EN: /{currentURL} 
 - if clicked ES: /es/{currentURL} 
 -->
-
-
-<button class="icon-button" id="langButton">
-  <img src="/internet.png">
-</button>
-
-<!-- Include JavaScript if needed -->
-<script type="module">
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('langButton').addEventListener('click', () => {
-      alert('Prueba otra vez');
-    });
-  });
-</script>
