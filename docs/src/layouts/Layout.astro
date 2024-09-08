@@ -4,10 +4,13 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import { getLangFromUrl } from '@i18n/utils';
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -18,34 +21,13 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<div class="main">
+			<script src="../scripts/oneko.js"></script>
+			<slot />
+		</div>
 	</body>
 </html>
 <style is:global>
-	/*
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-	*/
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
@@ -57,31 +39,39 @@ const { title } = Astro.props;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 18px;
-		line-height: 1.6;
-	}
-	.main footer {
-    height: 100%;
-    display: flex;
-    flex: 1;
-    align-items: flex-end;
-    justify-content: center;
-    color: var(--text-dark-subtext-color);
-	}
-	.main div, footer {
-    flex: 1;
-    width: 100%;
-    max-width: 75ch;
+		line-height: 1.4;
 	}
 	a {
-		color: bisque;
 		color: yellowgreen;
 	}
 	.nav {
+		display: flex;
 		text-align: end;
+		justify-content: end;
+		align-items: center;
+		margin-left: 15px;
+		/* padding: 10px 15px;		 */
+	}
+	.nav a,
+	.nav button {
+		margin-left: 15px;
+	}
+  .icon-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 50%;
+		margin-left: 10px;
 	}
 	.footer {
 		position: fixed;
 		bottom: 0;
 		text-align: center;
+		flex: 1;
+    width: 100%;
+    max-width: 75ch;
+	}
+	code {
+		font-size: 16px;
 	}
 </style>

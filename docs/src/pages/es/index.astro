@@ -1,0 +1,28 @@
+---
+import Layout from '@layouts/Layout.astro';
+import NavbarES from '@components/NavbarES.astro';
+import Footer from '@components/Footer.astro';
+
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+// defaultLocale is "es"
+const aboutURL = getRelativeLocaleUrl("es", "about");
+---
+
+<Layout title='pabloqpacin'>
+	<NavbarES />
+	<div>
+		<h1>hola, soy pablo</h1>
+		<!-- <p>im a developer and (un)professional pentester mostly interested in infosec, and a silly block game.</p> -->
+		<!-- <p>i generally do software pentesting unprofessionally mostly about web, but sometimes other stuff. i also do devops (so you can call me a devsecops engineer?).</p> -->
+		<h2>proyectos</h2>
+		<p>casi todos mis proyectos están en <a href="https://github.com/pabloqpacin">github</a>:</p>
+		<!-- <p>some interesting projects that are public of note are:</p> -->
+		<ul>
+			<li><a href="https://github.com/pabloqpacin/dotfiles">dotfiles</a>: scripts y archivos de configuración para sistemas Linux y Windows</li>
+			<!-- <li><a href="#">foo</a>: bar</li> -->
+			<!-- <li><a href="#">foo</a>: bar</li> -->
+		</ul>
+	</div>
+	<Footer />
+</Layout>

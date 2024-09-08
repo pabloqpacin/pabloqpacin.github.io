@@ -4,6 +4,7 @@ description:  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores 
 date: 2024-09-02
 # image: https://cdn.pixabay.com/photo/2016/11/04/13/31/css-1797778_1280.jpg
 tags: [css]
+language: es
 ---
 
 # Título del Post 2
