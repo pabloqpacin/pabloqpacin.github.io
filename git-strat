@@ -1,3 +1,4 @@
+> CURSO
 
 git checkout -b devel
 git commit -m "foo"
@@ -13,4 +14,20 @@ git push origin --delete devel
 git push --set-upstream origin legacy/foo
 
 git checkout main && git pull
+git checkout -b devel
+
+# ---
+
+> CUSTOM
+
+git checkout -b devel
+git commit -m "foo"
+git push -u origin devel
+
+PR (squash)
+
+git checkout main
+git fetch --all && git pull
+git branch -d devel
+git push origin --delete devel
 git checkout -b devel

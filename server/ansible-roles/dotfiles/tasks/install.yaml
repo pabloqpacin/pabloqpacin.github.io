@@ -41,3 +41,13 @@
     dest: /usr/bin/bat
     state: link
     force: no
+
+- name: Install delta
+  ansible.builtin.shell: |
+    if ! command -v delta &>/dev/null; then
+      pkg='git-delta_0.18.1_amd64.deb'
+      curl -Lo /tmp/${pkg} https://github.com/dandavison/delta/releases/download/0.18.1/${pkg}
+      dpkg -i /tmp/${pkg}
+    fi
+  args:
+    executable: /bin/bash

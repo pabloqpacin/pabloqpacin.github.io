@@ -1,11 +1,13 @@
 ---
-- name: Copy them files
-  ansible.builtin.copy:
-    src: "{{ playbook_dir }}/../{{ item }}"
-    dest: /opt/astro/{{ item }}
-    owner: root
-    group: root
-    mode: '0644'
-  loop:
-    - docs/
+# - name: Copy them files
+#   ansible.builtin.copy:
+#     src: "{{ playbook_dir }}/../{{ item }}"
+#     dest: /opt/astro/{{ item }}
+#     owner: root
+#     group: root
+#     mode: '0644'
+#   loop:
+#     - docs/
 
+
+# 101: get nvm > nvm install node > node install -g pnpm
