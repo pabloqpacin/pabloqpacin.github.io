@@ -3,10 +3,9 @@ import Layout from '@layouts/Layout.astro';
 import NavbarES from '@components/NavbarES.astro';
 import Footer from '@components/Footer.astro';
 
-import { getRelativeLocaleUrl } from 'astro:i18n';
-
-// defaultLocale is "es"
-const aboutURL = getRelativeLocaleUrl("es", "about");
+// import { getRelativeLocaleUrl } from 'astro:i18n';
+// // defaultLocale is "es"
+// const aboutURL = getRelativeLocaleUrl("es", "about");
 ---
 
 <Layout title='pabloqpacin'>
@@ -15,13 +14,47 @@ const aboutURL = getRelativeLocaleUrl("es", "about");
 		<h1>hola, soy pablo</h1>
 		<!-- <p>im a developer and (un)professional pentester mostly interested in infosec, and a silly block game.</p> -->
 		<!-- <p>i generally do software pentesting unprofessionally mostly about web, but sometimes other stuff. i also do devops (so you can call me a devsecops engineer?).</p> -->
+
+		<p>soy un administrador de sistemas</p>
+		<p>linux</p>
+		<p>devops</p>
+		<p>automatización</p>
+		<p>ciberseguridad</p>
+		<p>redes</p>
+		<p>programación amateur</p>
+		<p></p>
+		<p></p>
+
 		<h2>proyectos</h2>
-		<p>casi todos mis proyectos están en <a href="https://github.com/pabloqpacin">github</a>:</p>
+		<p>casi todos mis laboratorios y proyectos están en <a href="https://github.com/pabloqpacin">github</a> y <a href="#">dockerhub</a>:</p>
 		<!-- <p>some interesting projects that are public of note are:</p> -->
-		<ul>
-			<li><a href="https://github.com/pabloqpacin/dotfiles">dotfiles</a>: scripts y archivos de configuración para sistemas Linux y Windows</li>
-			<!-- <li><a href="#">foo</a>: bar</li> -->
-			<!-- <li><a href="#">foo</a>: bar</li> -->
+		<ul class="list-projects">
+			<li>
+				<a href="https://github.com/pabloqpacin/dotfiles">dotfiles</a>: <!--scripts y archivos de configuración para sistemas Linux y Windows.-->
+				<ul>
+					<li>configuración multiplataforma en Lua del editor <code>neovim</code></li>
+					<li>aliases, funciones y módulos para <code>PowerShell 7</code> (shoutout oh-my-posh)</li>
+					<li>aliases, funciones y plugins POSIX para la shell <code>zsh</code> (shoutout oh-my-zsh)</li>
+					<li>configuración de herramientas CLI: <code>alacritty</code>, <code>bat</code>, <code>lf</code>, <code>tmux</code>...</li>
+					<li>scripts <code>bash</code> y <code>powershell</code> que automatizan el setup de forma tremebunda</li>
+					<li>WIP: playbooks de ansible en lugar de scripts</li>
+				</ul>
+			</li>
+			<li><a href="#">ASIR</a>: bar</li>
+			<li><a href="#">proyecto-lemp-compose</a>: bar</li>
+			<!-- <li><a href="#">stack_dpm</a>: bar</li> -->
+			<li><a href="#">k8s-bs</a>: bar</li>
+			<li><a href="#">k8s-proper</a>: bar</li>
+			<!-- <li><a href="#">tbok</a>: bar</li> -->
+			<li><a href="#">devops_101</a>: bar</li>
+			<!-- <li><a href="#">lab-terraform</a>: bar</li> -->
+			<!-- <li><a href="#">AWS_al_completo</a>: bar</li> -->
+			<li><a href="#">Advent of Code</a>: AoC 2023-2024 en bash y python <!--Lenguajes de programación: bash, python, go, rust, C--></li>
+			<li><a href="#">CRustInoPy</a>: C-eazy, Rustey, pystuff .. arduino</li>
+			<li><a href="#">SLIT</a>: bar <!--TODO: webapp fetching YT API--></li>
+			<!-- <li><a href="#">SWEGods</a>: bar</li> -->
+			<!-- <li><a href="#">lab_maremoto</a>: bar</li> -->
+			<!-- <li><a href="#">lab_asterisk</a>: bar</li> -->
 		</ul>
 	</div>
 	<Footer />
