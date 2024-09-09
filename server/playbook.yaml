@@ -1,7 +1,7 @@
 ---
-- name: Disponibilizar PR-setenova_webpage
+- name: Disponibilizar pabloqpacin.github.io (Astro)
   hosts: remote
   become: true
   roles:
     - dotfiles
-    - astro
+    # - astro
