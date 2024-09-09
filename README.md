@@ -1,51 +1,7 @@
 # pabloqpacin.github.io
 
 
-
-## GitHub Pages
-
-<!-- 
-- [HOW TO](https://pages.github.com/)
-    - [x] nope, rather use astro ig - [Jekyll (static site generator)](https://jekyllrb.com/docs/)
-    - [ ] CNAME
-    - [ ] [GitHub Pages: 404, submodules, ...](https://docs.github.com/en/pages)
-- use an actual webdev framework maybe?
-    - [ ] htmx
-    - [ ] next.js
-    - [ ] re*ct
-    - [x] astro
- -->
-
-
-- https://github.com/pabloqpacin/pabloqpacin.github.io
-  - Settings: Pages:
-    - [x] branch: devel
-    - [x] root: /docs
-
-
-<!-- 
-## devel
-
-```bash
-cd server
-vagrant up && vagrant ssh
-
-sudo -i
-cd /opt/docs
-python3 -m http.server
-# EDIT STUFF
-```
-
----
-
--->
-
-
-## Astro
-
-<!-- ```bash
-npm run dev -- --host
-``` -->
+## GitHub Pages + Astro
 
 <!--
 - [ ] https://jekyllrb.com/docs/posts/
@@ -58,43 +14,65 @@ npm run dev -- --host
 - [ ] https://astrofy-template.netlify.app/
 -->
 
+
 > Curso Udemy: [Desarrollo web ultra rápido con Astro](https://www.udemy.com/course/desarrollo-web-ultra-rapido-con-astro/?couponCode=SKILLS4SALEB)
 
+<details>
+<summary>Capturas de cada mini-proyecto y rama del curso</summary>
 
-### Preps
+<table>
+<thead>
+  <th>Branch
+  <th>Capturas
+</thead>
+<tbody>
+  <tr>
+    <td>s4_blogMD
+    <td><img src="public/screenshots/s4_blogMD.png"/>
+  </tr>
+  <tr>
+    <td rowspan="2">s5_APIpeliculas
+    <td><img src="public/screenshots/s5_APIpeliculas_1.png"/>
+  </tr>
+  <tr>
+    <td><img src="public/screenshots/s5_APIpeliculas_2.png"/>
+  </tr>
+  <tr>
+    <td>s6_shortenUrls
+    <td><img src="public/screenshots/s6_shortenUrls.png"/>
+  </tr>
+  <tr>
+    <td>s7_scrollpage
+    <td><img src="public/screenshots/s7_scrollpage.png"/>
+  </tr>
+  <tr>
+    <td rowspan="4">s8_portafolio
+    <td><img src="public/screenshots/s8_portafolio_1.png"/>
+  </tr>
+  <tr>
+    <td><img src="public/screenshots/s8_portafolio_2.png"/>
+  </tr>
+  <tr>
+    <td><img src="public/screenshots/s8_portafolio_3.png"/>
+  </tr>
+  <tr>
+    <td><img src="public/screenshots/s8_portafolio_4.png"/>
+  </tr>
+  <tr>
+    <td>s9_contcoll_blogMD
+    <td><img src="public/screenshots/s9_contcoll_blogMD.png"/>
+  </tr>
+  <tr>
+    <td>s10_openai
+    <td><img src="public/screenshots/s10_openai.png"/>
+  </tr>
+</tbody>
+</table>
 
-- [x] https://docs.astro.build/en/guides/deploy/github/
-- SSR
-  - [x] https://docs.astro.build/en/reference/errors/no-adapter-installed/
-  - [ ] https://docs.astro.build/en/guides/server-side-rendering/
-    - [ ] Any available **adapter** for **Github Pages**? Atm I can't figure it out
-    - [x] Atm **no SSR** on **Github Pages** (INOP)
+</details>
+<br>
 
-```log
-# astro/action: CI/CD: Install, build, and upload your site
-# https://github.com/pabloqpacin/pabloqpacin.github.io/actions/runs/10619370568/job/29436796855
-
-[NoAdapterInstalled] Cannot use `output: 'server'` or `output: 'hybrid'` without an adapter. Please install and configure the appropriate server adapter for your final deployment.
-  Hint:
-    See https://docs.astro.build/en/guides/server-side-rendering/ for more information.
-  Error reference:
-    https://docs.astro.build/en/reference/errors/no-adapter-installed/
-  Stack trace:
-    at viteBuild (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/core/build/static-build.js:42:11)
-    at async AstroBuilder.run (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/core/build/index.js:180:7)
-    at async build (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/cli/build/index.js:24:3)
-    at async cli (file:///home/runner/work/pabloqpacin.github.io/pabloqpacin.github.io/docs/node_modules/astro/dist/cli/index.js:168:5)
-Error: Process completed with exit code 1.
-```
-<!-- 
-- [ ] https://github.com/withastro/adapters
-- [ ] https://astro.build/integrations/?search=&categories%5B%5D=adapters
-- [ ] https://vitejs.dev/guide/ssr.html
- -->
-
-### Next up
-
-- [ ] https://docs.astro.build/en/guides/internationalization/
-
-
+- **pabloqpacin.github.io**
+  - [x] https://docs.astro.build/en/guides/deploy/github/
+  - [ ] SSR INOP on Github Pages ([no adapter](https://docs.astro.build/en/reference/errors/no-adapter-installed/))
 
